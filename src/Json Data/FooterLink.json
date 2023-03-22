@@ -1,0 +1,24 @@
+[
+  { "help": ["Contact us", "Shipping", "Returns & Exchanges"] },
+  {
+    "Shopping": [
+      "Customer Rewards",
+      "Store Locator",
+      "Terms & Conditions",
+      "Privacy Policy",
+      "Your Privacy Rights",
+      "Accessibility"
+    ]
+  },
+  {
+    "know us": [
+      "About Sukin",
+      "Brand Values",
+      "Ingredients",
+      "The Sukin NO List",
+      "Trees for the Future",
+      " Brand FAQs",
+      "Sukin Affiliate Program"
+    ]
+  }
+]

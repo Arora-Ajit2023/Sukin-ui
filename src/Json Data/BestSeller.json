@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "price": 8.39,
+    "ratting": 5,
+    "review": 127,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Body_Lotion_500ml_02_720x.jpg",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating-Body-Lotion_02_360x.jpg",
+    "productName": "HYDRATING BODY LOTION ",
+    "category": "SIGNATURE"
+  },
+  {
+    "id": 1,
+    "price": 15.99,
+    "ratting": 4.5,
+    "review": 107,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxident_Eye_Serum_01_Product_720x.jpg",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxidant_Eye_Cream_30ml_01_360x.jpg",
+    "productName": "ANTIOXIDANT EYE SERUM ",
+    "category": "SIGNATURE"
+  },
+  {
+    "id": 2,
+    "price": 15.99,
+    "ratting": 4.5,
+    "review": 66,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Hydrating_Replenishing_Hair_Masque_200mL.png",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/new-hair-treatment_360x.jpg",
+    "productName": "HYDRATING REPLENISHING MASK TREATMENT",
+    "category": "HAIR CARE"
+  },
+  {
+    "id": 3,
+    "price": 15.99,
+    "ratting": 4.5,
+    "review": 115,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Facial_Recovery_Serum_30ml_01_Product_720x.jpg",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Facial_Recovery_Serum_30ml_FL_01_360x.jpg",
+    "productName": "HYDRATING REPLENISHING MASK TREATMENT",
+    "category": "HAIR CARE"
+  }
+]
