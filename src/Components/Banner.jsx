@@ -8,38 +8,47 @@ import { Autoplay, Navigation } from 'swiper';
 
 const BannerImageContainer = styled(Box)(({ theme }) => ({
   width: '100vw',
-  height: '100%',
+  height: '100vh',
+  cursor: 'pointer',
   display: 'flex',
 }));
 
 const Banner = () => {
   return (
-    <Swiper
-      autoplay={{
-        delay: 5000,
+    <Box
+      sx={{
+        position: 'relative',
+        top: '-131px',
+        height: '620px',
       }}
-      loop={true}
-      navigation={true}
-      modules={[Autoplay, Navigation]}
     >
-      {BannarData.map((Data) => {
-        return (
-          <SwiperSlide key={BannarData.indexOf(Data)}>
-            <BannerImageContainer>
-              <img
-                src={Data}
-                alt='Bannar Image'
-                style={{
-                  objectFit: 'contain',
-                  width: '100%',
-                  height: '100%',
-                }}
-              />
-            </BannerImageContainer>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+      <Swiper
+        autoplay={{
+          delay: 5000,
+        }}
+        loop={true}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+      >
+        {BannarData.map((Data) => {
+          return (
+            <SwiperSlide key={BannarData.indexOf(Data)}>
+              <BannerImageContainer>
+                <img
+                  src={Data}
+                  alt='Bannar Image'
+                  style={{
+                    objectFit: 'contain',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />
+              </BannerImageContainer>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </Box>
   );
 };
 

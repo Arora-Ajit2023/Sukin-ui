@@ -1,24 +1,12 @@
-// @ts-nocheck
-import {
-  Box,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  styled,
-  Button,
-  Typography,
-} from '@mui/material';
+import { Box, styled, Button, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import Banner from '../Components/Banner';
 import BestSeller from '../Components/BestSeller';
-import RatingComp from '../Components/Reusable Components/RatingComp';
-import RattingButton from '../Components/Reusable Components/RattingButton';
+import NaturalValue from '../Json Data/NaturalSValue.json';
+import Details from '../Json Data/Details.json';
 const StoryBox = styled('div')(({ theme }) => ({
   width: '80%',
 }));
-import BestSellerData from '../Json Data/BestSeller.json';
-import { BestSellerStyle } from './Styles';
 
 const StoryButton = styled('button')(({ theme }) => ({
   width: '200px',
@@ -27,20 +15,22 @@ const StoryButton = styled('button')(({ theme }) => ({
   background: '#173f35',
   color: '#fff',
   border: '1px solid #173f35',
+  fontSize: '0.9rem',
 }));
 
-// const BestSellerStyle = {
-//   letterSpacing: '0.7rem',
-//   fontSize: '1.7rem',
-//   fontWeight: 800,
-//   color: 'white',
-//   paddingBottom: '2rem',
-//   width: '100%',
-//   textAlign: 'center',
-// };
+const BestSellerStyle = {
+  letterSpacing: '0.7rem',
+  fontSize: '1.7rem',
+  fontWeight: 800,
+  color: 'white',
+  paddingBottom: '2rem',
+  width: '100%',
+  textAlign: 'center',
+};
 
 const BestSellerBox = styled(Box)(({ theme }) => ({
   position: 'relative',
+  height: '93vh',
 }));
 
 const StoryContaint = styled('p')(({ theme }) => ({
@@ -48,13 +38,12 @@ const StoryContaint = styled('p')(({ theme }) => ({
   textAlign: 'center',
   lineHeight: '1.45',
   letterSpacing: '0.8px',
-  fontWeight: 'fontWeightLight',
+  fontWeight: '300',
+  opacity: 0.7,
 }));
 const HomePage = () => {
-  const [BestSellerImage, setBestSellerImage] = useState(false);
   return (
     <>
-      ``
       <Banner />
       <Box
         sx={{
@@ -72,7 +61,7 @@ const HomePage = () => {
             </StoryContaint>
             <Box
               sx={{
-                display: 'inline-flex',
+                display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 width: '100%',
@@ -97,11 +86,10 @@ const HomePage = () => {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              backgroundColor: 'black',
             }}
           />
         </Box>
-        <Box sx={{ position: 'absolute', top: '30%', width: '100%' }}>
+        <Box sx={{ position: 'relative', top: '-220px', width: '100%' }}>
           <Typography sx={BestSellerStyle}>OUR BESTSELLERS</Typography>
           <Box
             sx={{
@@ -112,80 +100,6 @@ const HomePage = () => {
               justifyContent: 'center',
             }}
           >
-            {/* {BestSellerData.map((bestProduct) => {
-              return (
-                <Box
-                  onMouseOver={() => {
-                    setBestSellerImage(true);
-                  }}
-                  onMouseLeave={() => {
-                    setBestSellerImage(false);
-                  }}
-                  sx={{
-                    border: '1px solid transparent',
-                    '&:hover': {
-                      border: '1px solid transparent',
-                      boxShadow: 3,
-                    },
-                  }}
-                  key={bestProduct.id}
-                >
-                  <Card sx={{ width: '280px' }}>
-                    <CardMedia
-                      component='img'
-                      alt='best Seller Products'
-                      height='120'
-                      image={
-                        !BestSellerImage
-                          ? bestProduct.image1
-                          : bestProduct.image2
-                      }
-                      sx={{
-                        objectFit: 'contain',
-                        width: '100%',
-                        height: 'auto',
-                      }}
-                    />
-                    <CardContent>
-                      <Typography
-                        variant='h5'
-                        sx={{
-                          fontSize: '1rem',
-                          fontWeight: 600,
-                          letterSpacing: '0.5px',
-                        }}
-                      >
-                        {bestProduct.productName} | {bestProduct.category}
-                      </Typography>
-                    </CardContent>
-                    <CardActions
-                      sx={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                      }}
-                    >
-                      <Typography
-                        variant='body2'
-                        sx={{
-                          fontSize: '1rem',
-                          color: '#54585a',
-                          paddingLeft: '0.5rem',
-                        }}
-                      >
-                        ${bestProduct.price}
-                      </Typography>
-                      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                        <RatingComp rating={bestProduct.ratting} />
-                        <RattingButton
-                          btn={bestProduct.review}
-                          title={bestProduct.productName}
-                        />
-                      </Box>
-                    </CardActions>
-                  </Card>
-                </Box>
-              );
-            })} */}
             <BestSeller />
           </Box>
           <Box
@@ -205,7 +119,6 @@ const HomePage = () => {
                 color: '#54585a',
                 marginTop: '3rem',
                 textAlign: 'center',
-
                 '&:hover': {
                   opacity: 0.6,
                 },
@@ -216,6 +129,120 @@ const HomePage = () => {
           </Box>
         </Box>
       </BestSellerBox>
+      <Box
+        sx={{
+          display: 'flex',
+          width: '60%',
+          margin: '0 auto',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          paddingY: '2rem',
+        }}
+      >
+        {NaturalValue.map((values) => {
+          return (
+            <Box
+              key={values}
+              sx={{
+                width: '90px',
+                height: '90px',
+                cursor: 'pointer',
+                '&:hover': {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              <img
+                src={values}
+                alt=' Naturals Value'
+                style={{ width: '100%', objectFit: 'contain', height: '100%' }}
+              />
+            </Box>
+          );
+        })}
+      </Box>
+      <Box>
+        <Box
+          sx={{
+            width: '80%',
+            height: '100vh',
+            margin: '0 auto',
+            display: 'flex',
+            gap: 2.5,
+            paddingY: '2rem',
+          }}
+        >
+          {Details.map((detail) => {
+            return (
+              <Box key={detail.id} sx={{ width: '50%', height: '60%' }}>
+                <Box sx={{ width: '100%', height: '100%' }}>
+                  <img
+                    src={detail.image}
+                    alt='details'
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      backgroundPosition: '30px',
+                    }}
+                  />
+                </Box>
+                <Box
+                  sx={{
+                    height: '28%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    paddingY: '1.5rem',
+                  }}
+                >
+                  <Typography
+                    variant='h4'
+                    sx={{
+                      fontWeight: '500',
+                      letterSpacing: '0.5px',
+                      textAlign: 'center',
+                    }}
+                  >
+                    {detail.heading}
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography
+                    variant='body1'
+                    sx={{
+                      width: '80%',
+                      textAlign: 'center',
+                      margin: '0 auto',
+                      wordSpacing: '0.5px',
+                      opacity: 0.7,
+                    }}
+                  >
+                    {detail.discription}
+                  </Typography>
+                </Box>
+
+                <Box
+                  sx={{
+                    margin: '0 auto',
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <StoryButton>{detail.btnValue}</StoryButton>
+                </Box>
+              </Box>
+            );
+          })}
+        </Box>
+      </Box>
+      <Box>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+        perferendis reprehenderit voluptas officia, itaque odit, dignissimos
+        quibusdam eos ratione illum officiis eius vero nostrum magnam id quod
+        ipsam, ipsum adipisci?
+      </Box>
     </>
   );
 };

@@ -33,12 +33,14 @@ const Header2 = () => {
   window.addEventListener('scroll', ChangeNavBackgroundColor);
   return (
     <AppBar
-      elevation={0}
+      elevation={1}
       sx={{
         backgroundColor: NavColor ? '#fff' : '#efefef',
         position: 'sticky',
         padding: '1.3rem 0 ',
-        height: '7rem',
+        height: '6.5rem',
+        opacity: NavColor ? 1 : 0.7,
+        margin: 0,
       }}
     >
       <Toolbar>

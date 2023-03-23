@@ -36,7 +36,7 @@ const BestSeller = () => {
             }}
             key={bestProduct.id}
           >
-            <Card sx={{ width: '280px' }}>
+            <Card sx={{ width: '280px', border: 'none', cursor: 'pointer' }}>
               <CardMedia
                 component='img'
                 alt='best Seller Products'
