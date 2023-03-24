@@ -4,6 +4,9 @@ import Banner from '../Components/Banner';
 import BestSeller from '../Components/BestSeller';
 import NaturalValue from '../Json Data/NaturalSValue.json';
 import Details from '../Json Data/Details.json';
+import CategorySelector from '../Components/CategorySelector';
+import Journal from '../Components/Journal';
+import InstagramSlider from '../Components/InstagramSlider';
 const StoryBox = styled('div')(({ theme }) => ({
   width: '80%',
 }));
@@ -12,7 +15,7 @@ const StoryButton = styled('button')(({ theme }) => ({
   width: '200px',
   padding: '1rem',
   marginTop: '2.5rem',
-  background: '#173f35',
+  backgroundColor: '#173f35',
   color: '#fff',
   border: '1px solid #173f35',
   fontSize: '0.9rem',
@@ -41,6 +44,7 @@ const StoryContaint = styled('p')(({ theme }) => ({
   fontWeight: '300',
   opacity: 0.7,
 }));
+
 const HomePage = () => {
   return (
     <>
@@ -77,6 +81,7 @@ const HomePage = () => {
           sx={{
             width: '100%',
             height: '300px',
+            backgroundColor: 'black',
           }}
         >
           <img
@@ -86,6 +91,7 @@ const HomePage = () => {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
+              opacity: 0.6,
             }}
           />
         </Box>
@@ -161,87 +167,93 @@ const HomePage = () => {
           );
         })}
       </Box>
-      <Box>
-        <Box
-          sx={{
-            width: '80%',
-            height: '100vh',
-            margin: '0 auto',
-            display: 'flex',
-            gap: 2.5,
-            paddingY: '2rem',
-          }}
-        >
-          {Details.map((detail) => {
-            return (
-              <Box key={detail.id} sx={{ width: '50%', height: '60%' }}>
-                <Box sx={{ width: '100%', height: '100%' }}>
-                  <img
-                    src={detail.image}
-                    alt='details'
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      backgroundPosition: '30px',
-                    }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    height: '28%',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    paddingY: '1.5rem',
-                  }}
-                >
-                  <Typography
-                    variant='h4'
-                    sx={{
-                      fontWeight: '500',
-                      letterSpacing: '0.5px',
-                      textAlign: 'center',
-                    }}
-                  >
-                    {detail.heading}
-                  </Typography>
-                </Box>
-                <Box>
-                  <Typography
-                    variant='body1'
-                    sx={{
-                      width: '80%',
-                      textAlign: 'center',
-                      margin: '0 auto',
-                      wordSpacing: '0.5px',
-                      opacity: 0.7,
-                    }}
-                  >
-                    {detail.discription}
-                  </Typography>
-                </Box>
-
-                <Box
-                  sx={{
-                    margin: '0 auto',
+      <Box
+        sx={{
+          width: '80%',
+          margin: '0 auto',
+          display: 'flex',
+          gap: 2.5,
+          marginBottom: '3rem',
+        }}
+      >
+        {Details.map((detail) => {
+          return (
+            <Box key={detail.id} sx={{ width: '50%', height: '60%' }}>
+              <Box sx={{ width: '100%', height: '60vh' }}>
+                <img
+                  src={detail.image}
+                  alt='details'
+                  style={{
                     width: '100%',
-                    display: 'flex',
-                    justifyContent: 'center',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  height: '100px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  paddingY: '1.5rem',
+                }}
+              >
+                <Typography
+                  variant='h4'
+                  sx={{
+                    fontWeight: '600',
+                    letterSpacing: '0.5px',
+                    textAlign: 'center',
+                    fontSize: '2rem',
                   }}
                 >
-                  <StoryButton>{detail.btnValue}</StoryButton>
-                </Box>
+                  {detail.heading}
+                </Typography>
               </Box>
-            );
-          })}
-        </Box>
+              <Box>
+                <Typography
+                  variant='body1'
+                  sx={{
+                    width: '80%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    alignItems: 'center',
+                    opacity: 0.7,
+                    margin: '0 auto',
+                  }}
+                >
+                  {detail.discription}
+                </Typography>
+              </Box>
+
+              <Box
+                sx={{
+                  margin: '0 auto',
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
+              >
+                <StoryButton>{detail.btnValue}</StoryButton>
+              </Box>
+            </Box>
+          );
+        })}
       </Box>
       <Box>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-        perferendis reprehenderit voluptas officia, itaque odit, dignissimos
-        quibusdam eos ratione illum officiis eius vero nostrum magnam id quod
-        ipsam, ipsum adipisci?
+        <CategorySelector />
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: '#efefef',
+        }}
+      >
+        <Journal />
+      </Box>
+      <Box>
+        <InstagramSlider />
       </Box>
     </>
   );

@@ -57,6 +57,7 @@ const BestSeller = () => {
                     fontSize: '1rem',
                     fontWeight: 600,
                     letterSpacing: '0.5px',
+                    height: '35px',
                   }}
                 >
                   {bestProduct.productName} | {bestProduct.category}

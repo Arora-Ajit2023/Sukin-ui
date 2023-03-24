@@ -37,7 +37,7 @@ const Header2 = () => {
       sx={{
         backgroundColor: NavColor ? '#fff' : '#efefef',
         position: 'sticky',
-        padding: '1.3rem 0 ',
+        padding: '1.3rem 0',
         height: '6.5rem',
         opacity: NavColor ? 1 : 0.7,
         margin: 0,
