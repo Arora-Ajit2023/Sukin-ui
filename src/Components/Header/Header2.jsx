@@ -38,9 +38,9 @@ const Header2 = () => {
         backgroundColor: NavColor ? '#fff' : '#efefef',
         position: 'sticky',
         padding: '1.3rem 0',
-        height: '6.5rem',
         opacity: NavColor ? 1 : 0.7,
         margin: 0,
+        top: -1,
       }}
     >
       <Toolbar>
@@ -54,7 +54,7 @@ const Header2 = () => {
             gap: '4rem',
           }}
         >
-          <Box sx={{ width: '15%' }}>
+          <Box sx={{ width: '15%', cursor: 'pointer' }}>
             <img
               src='https://raw.githubusercontent.com/Arora-Ajit2023/image-sukin/main/logo.svg'
               alt='logo'
@@ -112,7 +112,7 @@ const Header2 = () => {
                 </Link>
               </NavList>
 
-              <NavList sx={{ width: '150px' }}>
+              <NavList sx={{ width: '150px', cursor: 'pointer' }}>
                 <img
                   src='https://storage.googleapis.com/dtk-sukin-naturals-au/blog/blog-journal_1547004848945.svg'
                   alt='sample'

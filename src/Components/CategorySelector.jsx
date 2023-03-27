@@ -55,6 +55,7 @@ const CategorySelector = () => {
                 displayEmpty
                 inputProps={{
                   'aria-label': 'Without label',
+                  MenuProps: { disableScrollLock: true },
                 }}
                 disableUnderline={true}
                 sx={{

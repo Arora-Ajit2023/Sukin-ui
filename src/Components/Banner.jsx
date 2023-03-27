@@ -19,8 +19,8 @@ const Banner = () => {
     <Box
       sx={{
         position: 'relative',
-        top: '-131px',
-        height: '620px',
+        top: '-146px',
+        height: '100vh',
       }}
     >
       <Swiper

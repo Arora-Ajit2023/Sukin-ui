@@ -40,71 +40,71 @@ const InstagramSlider = () => {
       >
         {InstaData.map((Data) => {
           return (
-            <>
-              <SwiperSlide
-                key={Data.id}
-                style={{
-                  width: '250px',
-                  height: '250px',
-                  position: 'relative',
+            <SwiperSlide
+              key={Data.id}
+              style={{
+                width: '250px',
+                height: '250px',
+                position: 'relative',
+              }}
+              // onMouseOver={() => {
+              //   setVisible(true);
+              // }}
+              // onMouseLeave={() => {
+              //   setVisible(false);
+              // }}
+              className='slider'
+            >
+              <Box
+                component='img'
+                sx={{
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '100%',
                 }}
-                // onMouseOver={() => {
-                //   setVisible(true);
-                // }}
-                // onMouseLeave={() => {
-                //   setVisible(false);
-                // }}
-                className='slider'
-              >
-                <Box
-                  component='img'
-                  sx={{
-                    objectFit: 'cover',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  src={Data.image}
-                  alt='Bannar Image'
-                  className='instaImages'
-                />
+                src={Data.image}
+                alt='Bannar Image'
+                className='instaImages'
+              />
 
-                <Box
+              <Box
+                sx={{
+                  position: 'absolute',
+                  top: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  height: '100%',
+                  width: '100%',
+                  p: '0.9rem',
+                }}
+                className='instaComments'
+              >
+                <Typography
+                  variant='body1'
+                  color={'white'}
                   sx={{
-                    position: 'absolute',
-                    top: 0,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    height: '100%',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    display: '-webkit-box',
+                    WebkitLineClamp: '3',
+                    WebkitBoxOrient: 'vertical',
+                    lineHeight: '1.8rem',
+                    fontSize: '0.9rem',
+                    pr: '1.rem',
                   }}
-                  className='instaComments'
                 >
-                  <Typography
-                    variant='body1'
-                    color={'white'}
-                    sx={{
-                      p: '0.4rem',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      display: '-webkit-box',
-                      WebkitLineClamp: '3',
-                      WebkitBoxOrient: 'vertical',
-                      lineHeight: '1.8rem',
-                      fontSize: '0.9rem',
-                    }}
-                  >
-                    {Data.comments}
-                  </Typography>
-                  <Typography
-                    variant='body1'
-                    color={'white'}
-                    sx={{ p: '0.4rem' }}
-                  >
-                    {Data.date}
-                  </Typography>
-                </Box>
-              </SwiperSlide>
-            </>
+                  {Data.comments}
+                </Typography>
+                <Typography
+                  variant='body1'
+                  color={'white'}
+                  sx={{ fontSize: '0.9rem', pb: '1rem' }}
+                >
+                  {Data.date}
+                </Typography>
+              </Box>
+            </SwiperSlide>
           );
         })}
       </Swiper>
