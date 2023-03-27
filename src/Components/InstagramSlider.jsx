@@ -1,12 +1,12 @@
 // @ts-nocheck
 import { Box, styled, Typography } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper';
 import InstaData from '../Json Data/InstagramDetails.json';
-
+import './Insta.css';
 const InstagramBox = styled(Box)(({ theme }) => ({
   width: '95%',
   margin: '0 auto',
@@ -14,6 +14,7 @@ const InstagramBox = styled(Box)(({ theme }) => ({
 }));
 
 const InstagramSlider = () => {
+  const [visible, setVisible] = useState(false);
   return (
     <InstagramBox>
       <Typography
@@ -46,8 +47,14 @@ const InstagramSlider = () => {
                   width: '250px',
                   height: '250px',
                   position: 'relative',
-                  backgroundColor: 'black',
                 }}
+                // onMouseOver={() => {
+                //   setVisible(true);
+                // }}
+                // onMouseLeave={() => {
+                //   setVisible(false);
+                // }}
+                className='slider'
               >
                 <Box
                   component='img'
@@ -55,13 +62,10 @@ const InstagramSlider = () => {
                     objectFit: 'cover',
                     width: '100%',
                     height: '100%',
-                    '&:hover': {
-                      opacity: 0.4,
-                      visibility: 'visible',
-                    },
                   }}
                   src={Data.image}
-                  alt=" alt='Bannar Image'"
+                  alt='Bannar Image'
+                  className='instaImages'
                 />
 
                 <Box
@@ -70,14 +74,24 @@ const InstagramSlider = () => {
                     top: 0,
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-around',
-                    '&:hover': { visibility: 'visible' },
+                    justifyContent: 'space-between',
+                    height: '100%',
                   }}
+                  className='instaComments'
                 >
                   <Typography
                     variant='body1'
                     color={'white'}
-                    sx={{ p: '0.4rem' }}
+                    sx={{
+                      p: '0.4rem',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      display: '-webkit-box',
+                      WebkitLineClamp: '3',
+                      WebkitBoxOrient: 'vertical',
+                      lineHeight: '1.8rem',
+                      fontSize: '0.9rem',
+                    }}
                   >
                     {Data.comments}
                   </Typography>

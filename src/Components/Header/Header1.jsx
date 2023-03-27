@@ -4,7 +4,7 @@ import React from 'react';
 const Header1Box = styled('div')(({ theme }) => ({
   backgroundColor: '#173f35',
   color: '#fff',
-  padding: '12px 0',
+  padding: '15px 0',
   fontSize: '0.8rem',
 }));
 

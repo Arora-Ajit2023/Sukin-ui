@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "image": "https://raw.githubusercontent.com/Arora-Ajit2023/image-sukin/main/S1.svg",
+    "detail": "Free shipping on orders over $50*"
+  },
+  {
+    "id": 1,
+    "image": "https://raw.githubusercontent.com/Arora-Ajit2023/image-sukin/main/S2.svg",
+    "detail": "Find Sukin at a store near you"
+  },
+  {
+    "id": 2,
+    "image": "https://raw.githubusercontent.com/Arora-Ajit2023/image-sukin/main/S3.svg",
+    "detail": "Earn points with every purchase"
+  },
+  {
+    "id": 3,
+    "image": "https://raw.githubusercontent.com/Arora-Ajit2023/image-sukin/main/S4.svg",
+    "detail": "Buy now, pay later with Afterpay"
+  }
+]

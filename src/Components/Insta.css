@@ -1,0 +1,16 @@
+.slider:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.slider:hover .instaImages {
+  opacity: 0.3;
+}
+
+.instaComments {
+  visibility: hidden;
+}
+
+.slider:hover .instaComments {
+  visibility: visible;
+}

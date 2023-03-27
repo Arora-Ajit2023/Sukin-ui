@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, styled } from '@mui/material';
 import React, { useRef } from 'react';
 import BannarData from '../Json Data/Banner.json';
@@ -29,6 +30,10 @@ const Banner = () => {
         loop={true}
         navigation={true}
         modules={[Autoplay, Navigation]}
+        style={{
+          '--swiper-navigation-sides-offset': '30px',
+          '--swiper-navigation-color': 'black',
+        }}
       >
         {BannarData.map((Data) => {
           return (

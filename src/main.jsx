@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import MainFooter from './Components/Footer/MainFooter';
 import Header1 from './Components/Header/Header1';
 import Header2 from './Components/Header/Header2';
 import './index.css';
@@ -11,5 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header1 />
     <Header2 />
     <App />
+    <MainFooter />
   </div>
 );
