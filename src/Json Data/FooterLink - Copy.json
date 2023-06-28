@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "heading": "Here to help",
+    "list": [
+      "Contact us",
+      "Shipping",
+      "Returns & Exchanges",
+      "Customer Service FAQs"
+    ]
+  },
+  {
+    "id": 1,
+    "heading": "Shopping with us",
+    "list": [
+      "Customer Rewards",
+      "Store Locator",
+      "Terms & Conditions",
+      "Privacy Policy",
+      "Your Privacy Rights",
+      "Accessibility"
+    ]
+  },
+  {
+    "id": 2,
+    "heading": "Get to know us",
+    "list": [
+      "About Sukin",
+      "Brand Values",
+      "Ingredients",
+      "The Sukin NO List",
+      "Trees for the Future",
+      " Brand FAQs",
+      "Sukin Affiliate Program"
+    ]
+  }
+]

@@ -1,10 +1,9 @@
 import { Box, Link, styled, Typography } from '@mui/material';
 import React from 'react';
-
+import './header1.css';
 const Header1Box = styled('div')(({ theme }) => ({
   backgroundColor: '#173f35',
   color: '#fff',
-  padding: '15px 0',
   fontSize: '0.8rem',
 }));
 
@@ -24,6 +23,7 @@ const Header1 = () => {
             width: '60%',
             display: 'flex',
             alignItems: 'center',
+            padding: '15px 0',
             gap: '2%',
           }}
         >
@@ -37,10 +37,21 @@ const Header1 = () => {
             width: '30%',
             display: 'flex',
             justifyContent: 'end',
+            padding: '15px 0',
             gap: '15%',
           }}
         >
-          <Typography variant='inherit'>USD</Typography>
+          <div className='test'>
+            <Typography variant='inherit' className='test1'>
+              USD
+            </Typography>
+            <p className='test2'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              officiis, earum ipsam odio fugit beatae nisi, recusandae ratione
+              iste odit numquam perferendis magnam libero cupiditate laudantium
+              magni, itaque dolores illum!
+            </p>
+          </div>
           <Link href='#' underline='none' color='inherit'>
             Find us in Store
           </Link>

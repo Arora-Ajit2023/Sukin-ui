@@ -1,0 +1,178 @@
+[
+  {
+    "id": 0,
+    "price": 9.99,
+    "ratting": 4.5,
+    "review": 154,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_01_Product_720x.jpg?v=1599504641",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Mist_Toner_125ml_OH_01_360x.jpg?v=1599504641",
+    "productName": "HYDRATING MIST TONER",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 1,
+    "price": 9.99,
+    "ratting": 5,
+    "review": 52,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_01_Product_720x.jpg?v=1599504649",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Masterbrand_Rose_Mist_Toner_125ml_Green_Tea_Mist_Toner_125ml_01_540x.jpg?v=1599504649",
+    "productName": "ROSE HYDRATING MIST TONER",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 2,
+    "price": 9.99,
+    "ratting": 4.5,
+    "review": 1064,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Facial_Moisturiser_125ml_01_Product_720x.jpg?v=1599504612",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Facial-Moisturiser_01_360x.jpg?v=1599504612",
+    "productName": "FACIAL MOISTURIZER PUMP",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 3,
+    "price": 9.99,
+    "ratting": 4.5,
+    "review": 173,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Foaming_Facial_Cleanser_125ml_01_Product_720x.jpg?v=1599504600",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Foaming_Facial_Cleanser_125ml_OH_01_1_360x.jpg?v=1599504601",
+    "productName": "FOAMING FACIAL CLEANSER",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 4,
+    "price": 10.99,
+    "ratting": 4.5,
+    "review": 52,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Micellar_Cleansing_Water_250ml_01_Product_720x.jpg?v=1599504588",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Micellar_Cleansing_Water_250ml_OH_01_360x.jpg?v=1599504588",
+    "productName": "MICELLAR CLEANSING WATER",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 5,
+    "price": 9.99,
+    "ratting": 5,
+    "review": 64,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Cream_Cleanser_125ml_01_Product_720x.jpg?v=1599504664",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Cream_Cleanser_125ml_OH_01_360x.jpg?v=1599504664",
+    "productName": "SIGNATURE CREAM CLEANSER",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 6,
+    "price": 5.99,
+    "ratting": 4.5,
+    "review": 976,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Revitalising_Facial_Scrub_125ml_01_Product_720x.jpg?v=1599504656",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_Revitalising_Facial_Scrub_125ml_OH_01_360x.jpg?v=1599504656",
+    "productName": "REVITALIZING FACIAL SCRUB",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 7,
+    "price": 12.99,
+    "ratting": 5,
+    "review": 31,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_01_Product_2_720x.jpg?v=1599504579",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Hydrating_Facial_Masque_OH_01_360x.jpg?v=1599504579",
+    "productName": "SIGNATURE HYDRATING FACE MASK",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 8,
+    "price": 15.99,
+    "ratting": 4.5,
+    "review": 107,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxident_Eye_Serum_01_Product_720x.jpg?v=1599504580",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Antioxidant_Eye_Cream_30ml_01_360x.jpg?v=1599504580",
+    "productName": "Antioxident Eye Serum",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 9,
+    "price": 15.99,
+    "ratting": 5,
+    "review": 83,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Moisture_Restoring_Night_Cream_120ml_01_Product_2_720x.jpg?v=1599504662",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Signature_Moisture_Restoring_Night_Cream_120ml_01_360x.jpg?v=1599504662",
+    "productName": "MOISTURE RESTORING NIGHT CREAM",
+    "category": "SIGNATURE",
+    "brandId": "1"
+  },
+  {
+    "id": 0,
+    "price": 12.99,
+    "ratting": 5,
+    "review": 93,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Sukin_Super_Greens_Detoxifying_Facial_Masque_720x.jpg?v=1599504639",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Detoxifying-Clay-Masque_01_360x.jpg?v=1599504639",
+    "productName": "DETOXIFYING CLAY MASK",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  },
+  {
+    "id": 1,
+    "price": 12.99,
+    "ratting": 5,
+    "review": 130,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Detoxifying_Facial_Scrub_125ml_01_Product_720x.jpg?v=1599504637",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Detoxifying_Facial_Scrub_125ml_OH_01_360x.jpg?v=1599504637",
+    "productName": "DETOXIFYING FACIAL SCRUB",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  },
+  {
+    "id": 2,
+    "price": 12.99,
+    "ratting": 4.5,
+    "review": 113,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Nutrient_Rich_Facial_Moisturiser_125ml_01_Product_Base_720x.jpg?v=1599504594",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Nutrient_Rich_Facial_Moisturiser_125ml_OH_01_360x.jpg?v=1599504594",
+    "productName": "NUTRIENT RICH FACIAL MOISTURIZER",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  },
+  {
+    "id": 3,
+    "price": 15.99,
+    "ratting": 4.5,
+    "review": 116,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Facial_Recovery_Serum_30ml_01_Product_720x.jpg?v=1599504591",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Facial_Recovery_Serum_30ml_FL_01_360x.jpg?v=1599504591",
+    "productName": "FACIAL RECOVERY SERUM",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  },
+  {
+    "id": 4,
+    "price": 12.99,
+    "ratting": 5,
+    "review": 52,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Cleansing_Oil_125ml_01_Product_Base_720x.jpg?v=1599504610",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Cleansing_Oil_125ml_01_360x.jpg?v=1599504610",
+    "productName": "CLEANSING OIL",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  },
+  {
+    "id": 5,
+    "price": 5.99,
+    "ratting": 5,
+    "review": 1,
+    "image1": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Super_Greens_Detoxifying_Sheet_Mask_Front_website_720x.jpg?v=1599504668",
+    "image2": "https://cdn.shopify.com/s/files/1/0081/7374/8305/products/Socials_314_360x.jpg?v=1608650390",
+    "productName": "DETOXIFYING BIODEGRADABLE SHEET MASK",
+    "category": "SUPER GREENS",
+    "brandId": "2"
+  }
+]

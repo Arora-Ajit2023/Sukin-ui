@@ -31,12 +31,12 @@ const InstagramSlider = () => {
       <Swiper
         slidesPerView={6}
         autoplay={{
-          delay: 1500,
           pauseOnMouseEnter: true,
         }}
         loop={true}
         modules={[Autoplay]}
         spaceBetween={10}
+        speed={1200}
       >
         {InstaData.map((Data) => {
           return (
@@ -47,12 +47,6 @@ const InstagramSlider = () => {
                 height: '250px',
                 position: 'relative',
               }}
-              // onMouseOver={() => {
-              //   setVisible(true);
-              // }}
-              // onMouseLeave={() => {
-              //   setVisible(false);
-              // }}
               className='slider'
             >
               <Box
